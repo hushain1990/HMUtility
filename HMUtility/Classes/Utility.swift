@@ -15,4 +15,22 @@ public class Utility {
         return emailTest.evaluate(with: email)
     }
     
+    public class func isPhoneNumber(_ phone : String) -> Bool {
+        let regEx = "[0-9]{10}"
+        let phoneTest = NSPredicate(format: "SELF MATCHES %@", regEx)
+        return phoneTest.evaluate(with: phone)
+    }
+    
+    public class func isPhoneNumberUAE(_ phone : String) -> Bool {
+        let regEx = "[0-9]{9,10}"
+        let phoneTest = NSPredicate(format: "SELF MATCHES %@", regEx)
+        return phoneTest.evaluate(with: phone)
+    }
+    
+    public class func isOTPNumber(_ otp : String) -> Bool {
+        let regEx = "[0-9]{4}"
+        let phoneTest = NSPredicate(format: "SELF MATCHES %@", regEx)
+        return phoneTest.evaluate(with: otp)
+    }
+    
 }
