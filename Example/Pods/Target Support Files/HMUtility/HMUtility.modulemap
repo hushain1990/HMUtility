@@ -1,0 +1,6 @@
+framework module HMUtility {
+  umbrella header "HMUtility-umbrella.h"
+
+  export *
+  module * { export * }
+}

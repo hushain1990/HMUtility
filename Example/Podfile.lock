@@ -1,0 +1,16 @@
+PODS:
+  - HMUtility (0.1.0)
+
+DEPENDENCIES:
+  - HMUtility (from `../`)
+
+EXTERNAL SOURCES:
+  HMUtility:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HMUtility: 6d354b7fc2fd640f676418db4dab772ebba466bb
+
+PODFILE CHECKSUM: 94b908368eb3306823a3ee02368e24c4daeb9a28
+
+COCOAPODS: 1.15.2
