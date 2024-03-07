@@ -17,7 +17,7 @@ HMUtility is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'HMUtility'
+pod 'HMUtility', :git => 'https://github.com/hushain1990/HMUtility.git'
 ```
 
 ## Author
