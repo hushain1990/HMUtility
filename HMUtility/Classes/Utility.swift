@@ -34,3 +34,71 @@ public class Utility {
     }
     
 }
+
+public class AlertClass {
+
+    //Simple Alert
+    public class func showAlert(title:String, message:String, vc:UIViewController) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        vc.present(alert, animated: true, completion: nil)
+    }
+    
+    //Confirmation Alert
+    public class func showSimpleConfirmationAlert(title:String, message:String, vc:UIViewController, okButtonTitle :String = "Yes", preferredStyle : UIAlertController.Style = .alert , isShowButtonDismiss:Bool = false, handler:@escaping(Bool)->Void) {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle:preferredStyle)
+    
+        alert.addAction(UIAlertAction(title: okButtonTitle, style: .default, handler: { (action) in
+            handler(true)
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        
+        if preferredStyle == .actionSheet && isShowButtonDismiss {
+            alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
+        }
+        
+        vc.present(alert, animated: true, completion: nil)
+    }
+    
+    //Confirmation Alert
+    public class func showConfirmationAlert(title:String, message:String, vc:UIViewController, okButtonTitle :String = "Yes", cancelButtonTitle:String = "No", preferredStyle : UIAlertController.Style = .alert , isShowButtonDismiss:Bool = false, handler:@escaping(Bool)->Void) {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle:preferredStyle)
+        
+        alert.addAction(UIAlertAction(title: cancelButtonTitle, style: .default, handler: { (action) in
+            handler(false)
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        
+        alert.addAction(UIAlertAction(title: okButtonTitle, style: .default, handler: { (action) in
+            handler(true)
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        
+        if preferredStyle == .actionSheet && isShowButtonDismiss {
+            alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
+        }
+        
+        vc.present(alert, animated: true, completion: nil)
+    }
+    
+    //Action For Delete
+    public class func showDeleteAlert(title:String, message:String, vc:UIViewController, handler:@escaping(Bool)->Void) {
+        
+        var alert : UIAlertController
+        if UI_USER_INTERFACE_IDIOM() == .pad {
+            alert = UIAlertController(title: title, message: message, preferredStyle:.alert)
+        } else {alert = UIAlertController(title: title, message: message, preferredStyle:.actionSheet)}
+        
+        alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { (action) in
+            handler(true)
+            alert.dismiss(animated: true, completion: nil)
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        
+        vc.present(alert, animated: true, completion: nil)
+    }
+    
+}
