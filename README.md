@@ -22,7 +22,7 @@ pod 'HMUtility'
 
 ## Author
 
-hushain1990, hushain1990@gmail.com
+Hushan Mubarik Khan, hushain1990@gmail.com
 
 ## License
 
