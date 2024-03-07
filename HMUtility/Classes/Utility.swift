@@ -35,7 +35,7 @@ public class Utility {
     
 }
 
-public class AlertClass {
+public class Alert {
 
     //Simple Alert
     public class func showAlert(title:String, message:String, vc:UIViewController) {
