@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import HMUtility
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        print("\(Utility.isValidEmail("hushain1990@gmail.com"))")
     }
 
     override func didReceiveMemoryWarning() {

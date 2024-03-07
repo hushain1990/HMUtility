@@ -13,6 +13,7 @@
 		360028F8B47857D0B1D638107A03EC72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		5D3A667310D9FD9C8B2C181F296A8448 /* Pods-HMUtility_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB4E9B1EB6FB141411241C7EE1324B0 /* Pods-HMUtility_Example-dummy.m */; };
 		7A2BD6D5E1BA2460962815B2209D261A /* Pods-HMUtility_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC9C71AE7488B278648148DCA2B19AC4 /* Pods-HMUtility_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EB9F3392B99A586006FE448 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB9F3382B99A586006FE448 /* Utility.swift */; };
 		B599880A8F80973B93934430D1EEBF76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		C02FFCF8604AEB4D13D2705686ED2CAD /* HMUtility-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F2DE852F2B62C00CA26D4E35AD47B4F /* HMUtility-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3780633F2C07ACB265E1C1E739EC406 /* Pods-HMUtility_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C33F395F2F77EF202E1C522F29AACFA5 /* Pods-HMUtility_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -51,6 +52,7 @@
 		6657BC623E78B6806128C46357A68D92 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = HMUtility/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7B42AE1967C8B8D212CA43758C2D1A29 /* HMUtility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HMUtility.release.xcconfig; sourceTree = "<group>"; };
+		7EB9F3382B99A586006FE448 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = HMUtility/Classes/Utility.swift; sourceTree = "<group>"; };
 		81A8A97C623ABA2376E1DD24F544C6BC /* HMUtility-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HMUtility-Info.plist"; sourceTree = "<group>"; };
 		8F7B42624328092CE23258ACD8D6FF4B /* Pods-HMUtility_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HMUtility_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		960816DD56E9991CD2519A7C929633D9 /* HMUtility-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HMUtility-prefix.pch"; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				6657BC623E78B6806128C46357A68D92 /* ReplaceMe.swift */,
+				7EB9F3382B99A586006FE448 /* Utility.swift */,
 				B264CA35030BADFFDE2C7EDEA3C11DB0 /* Pod */,
 				2F41E98D0B629B585F42C55B7C5A3B08 /* Support Files */,
 			);
@@ -385,6 +388,7 @@
 			files = (
 				DC92A75FD750EE463216978D33AA2577 /* HMUtility-dummy.m in Sources */,
 				152E16537F4726B2F75FD9097393C9DA /* ReplaceMe.swift in Sources */,
+				7EB9F3392B99A586006FE448 /* Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
